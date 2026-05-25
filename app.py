@@ -12,6 +12,9 @@ import os
 
 current_dir = os.path.dirname(__file__)
 
+st.write("Current Directory:", current_dir)
+st.write("Files:", os.listdir(current_dir))
+
 csv_path = os.path.join(current_dir, "Advertising.csv")
 
 data = pd.read_csv(csv_path)
