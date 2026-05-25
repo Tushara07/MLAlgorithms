@@ -8,7 +8,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
-data = pd.read_csv("Advertising.csv")
+import os
+
+current_dir = os.path.dirname(__file__)
+
+csv_path = os.path.join(current_dir, "Advertising.csv")
+
+data = pd.read_csv(csv_path)
 
 X = data[['TV']]
 y = data['Sales']
