@@ -13,3 +13,9 @@ KNN Classifier : Loan Approval Prediction
 Decision Tree Regressor : Gold Price Prediction
 
 Decision Tree Classifier : Customer Churn Prediction
+
+Random Forest Regressor : Airbnb Price Prediction
+
+Random Forest Classifier : Breast Cancer Prediction
+
+AdaBoost Regressor : Car Price Prediction
