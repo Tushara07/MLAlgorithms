@@ -19,3 +19,5 @@ Random Forest Regressor : Airbnb Price Prediction
 Random Forest Classifier : Breast Cancer Prediction
 
 AdaBoost Regressor : Car Price Prediction
+
+AdaBoost Classifier : Hotel Booking Cancellation Prediction
