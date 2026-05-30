@@ -4,8 +4,16 @@ import numpy as np
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
-model = joblib.load("stacking_model.pkl")
+current_dir = os.path.dirname(__file__)
+
+model_path = os.path.join(
+    current_dir,
+    "stacking_model.pkl"
+)
+
+model = joblib.load(model_path)
 
 data = pd.read_csv(
     "laptop_price.csv",
