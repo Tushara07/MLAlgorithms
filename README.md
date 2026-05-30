@@ -21,3 +21,7 @@
 ## **AdaBoost Regressor : Car Price Prediction**
 
 ## **AdaBoost Classifier : Hotel Booking Cancellation Prediction**
+
+## **Stacking Regressor : Laptop Price Prediction**
+
+## **Stacking Classifier : Mobile Price Range Classification**
