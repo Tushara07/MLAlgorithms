@@ -15,8 +15,15 @@ model_path = os.path.join(
 
 model = joblib.load(model_path)
 
+current_dir = os.path.dirname(__file__)
+
+csv_path = os.path.join(
+    current_dir,
+    "laptop_price.csv"
+)
+
 data = pd.read_csv(
-    "laptop_price.csv",
+    csv_path,
     encoding="latin1"
 )
 
