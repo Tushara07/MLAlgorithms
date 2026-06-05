@@ -4,12 +4,21 @@ import numpy as np
 import pickle
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
+import os
 
-model = pickle.load(open("kmeans_model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-df = pd.read_csv("clustered_customers.csv")
+model = pickle.load(
+    open(os.path.join(BASE_DIR, "kmeans_model.pkl"), "rb")
+)
 
+scaler = pickle.load(
+    open(os.path.join(BASE_DIR, "scaler.pkl"), "rb")
+)
+
+df = pd.read_csv(
+    os.path.join(BASE_DIR, "clustered_customers.csv")
+)
 st.set_page_config(
     page_title="Customer Segmentation",
     layout="wide"
