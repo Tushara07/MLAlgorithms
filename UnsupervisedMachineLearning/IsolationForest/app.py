@@ -13,6 +13,33 @@ df = pd.read_csv(
         "fraud_detection_results_sample.csv"
     )
 )
+features = df.drop(
+    columns=["Class"],
+    errors="ignore"
+)
+
+scaled_data = scaler.transform(
+    features
+)
+
+predictions = model.predict(
+    scaled_data
+)
+
+df["Predicted_Class"] = np.where(
+    predictions == -1,
+    1,
+    0
+)
+
+df["Transaction_Type"] = df[
+    "Predicted_Class"
+].map(
+    {
+        0: "Normal Transaction",
+        1: "Potential Fraud"
+    }
+)
 
 model = pickle.load(
     open(
