@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 df = pd.read_csv(
     os.path.join(
         BASE_DIR,
-        "fraud_detection_results.csv"
+        "fraud_detection_results_sample.csv"
     )
 )
 
