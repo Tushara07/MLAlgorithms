@@ -1,6 +1,2 @@
-echo creditcard.csv >> UnsupervisedMachineLearning/IsolationForest/.gitignore
-echo fraud_detection_results.csv >> UnsupervisedMachineLearning/IsolationForest/.gitignore
-
-git add UnsupervisedMachineLearning/IsolationForest/.gitignore
-git commit -m "Added gitignore for Isolation Forest dataset files"
-git push
+creditcard.csv
+fraud_detection_results.csv 
