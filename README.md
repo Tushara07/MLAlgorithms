@@ -1,27 +1,31 @@
-## **Linear Regression : Sales Prediction**
+# **Machine Learning Algorithms Projects**
 
-## **Logistic Regression : Diabetes Prediction**
+## **Supervised Learning**
 
-## **Support Vector Regression (SVR) : Medical Insurance Cost Prediction**
+### **Regression**
 
-## **Support Vector Classification (SVC) : Customer Purchase Prediction**
+* **Linear Regression : Sales Prediction**
+* **Support Vector Regression (SVR) : Medical Insurance Cost Prediction**
+* **KNN Regressor : House Price Prediction**
+* **Decision Tree Regressor : Gold Price Prediction**
+* **Random Forest Regressor : Airbnb Price Prediction**
+* **AdaBoost Regressor : Car Price Prediction**
+* **Stacking Regressor : Laptop Price Prediction**
 
-## **KNN Regressor : House Price Prediction**
+### **Classification**
 
-## **KNN Classifier : Loan Approval Prediction**
+* **Logistic Regression : Diabetes Prediction**
+* **Support Vector Classification (SVC) : Customer Purchase Prediction**
+* **KNN Classifier : Loan Approval Prediction**
+* **Decision Tree Classifier : Customer Churn Prediction**
+* **Random Forest Classifier : Breast Cancer Prediction**
+* **AdaBoost Classifier : Hotel Booking Cancellation Prediction**
+* **Stacking Classifier : Mobile Price Range Classification**
 
-## **Decision Tree Regressor : Gold Price Prediction**
+## **Unsupervised Learning**
 
-## **Decision Tree Classifier : Customer Churn Prediction**
-
-## **Random Forest Regressor : Airbnb Price Prediction**
-
-## **Random Forest Classifier : Breast Cancer Prediction**
-
-## **AdaBoost Regressor : Car Price Prediction**
-
-## **AdaBoost Classifier : Hotel Booking Cancellation Prediction**
-
-## **Stacking Regressor : Laptop Price Prediction**
-
-## **Stacking Classifier : Mobile Price Range Classification**
+* **K-Means Clustering : Customer Personality Segmentation**
+* **Hierarchical Clustering : Pokemon Classification**
+* **DBSCAN : Customer Behavior Analysis**
+* **Gaussian Mixture Model (GMM) : Football Player Classification**
+* **Principal Component Analysis (PCA) : Human Activity Recognition**
