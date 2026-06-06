@@ -13,6 +13,28 @@ df = pd.read_csv(
         "fraud_detection_results_sample.csv"
     )
 )
+
+
+model = pickle.load(
+    open(
+        os.path.join(
+            BASE_DIR,
+            "isolation_forest_model.pkl"
+        ),
+        "rb"
+    )
+)
+
+scaler = pickle.load(
+    open(
+        os.path.join(
+            BASE_DIR,
+            "scaler.pkl"
+        ),
+        "rb"
+    )
+)
+
 features = df.drop(
     columns=["Class"],
     errors="ignore"
@@ -40,27 +62,6 @@ df["Transaction_Type"] = df[
         1: "Potential Fraud"
     }
 )
-
-model = pickle.load(
-    open(
-        os.path.join(
-            BASE_DIR,
-            "isolation_forest_model.pkl"
-        ),
-        "rb"
-    )
-)
-
-scaler = pickle.load(
-    open(
-        os.path.join(
-            BASE_DIR,
-            "scaler.pkl"
-        ),
-        "rb"
-    )
-)
-
 st.set_page_config(
     page_title="Credit Card Fraud Detection using Isolation Forest",
     layout="wide"
